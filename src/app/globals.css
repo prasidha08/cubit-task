@@ -2,9 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+@layer components {
+  .pink-circle {
+    @apply bg-[#f747ee] absolute h-[400px] w-[500px] rounded-full blur-[8rem];
   }
 }
