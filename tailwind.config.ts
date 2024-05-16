@@ -1,5 +1,7 @@
 import type { Config } from "tailwindcss";
 
+export const lightRed = "#F35C6A";
+
 const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -16,6 +18,9 @@ const config: Config = {
         lightPink: "#EDE1FF",
         davyGray: "#535353",
         black: "#000000",
+        blue: "#5215FF",
+        darkPink: "#EB09FE",
+        lightRed,
       },
       fontFamily: {
         bricolageGrotesque: "Bricolage Grotesque",
