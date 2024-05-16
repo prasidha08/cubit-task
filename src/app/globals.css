@@ -12,4 +12,7 @@
   .pink-circle {
     @apply bg-[#f747ee] absolute h-[400px] w-[500px] rounded-full blur-[8rem];
   }
+  .text {
+    @apply text-left font-700 leading-[33.6px] text-title;
+  }
 }

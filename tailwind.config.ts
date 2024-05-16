@@ -7,7 +7,15 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {},
+      fontWeight: {
+        "700": "700",
+      },
+      fontSize: {
+        title: "28px",
+      },
+    },
   },
   plugins: [],
 };
