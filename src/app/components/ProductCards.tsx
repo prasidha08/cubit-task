@@ -86,7 +86,7 @@ function ProductCards({ product }: ProductCardsProps) {
 
   return (
     <motion.div
-      className="relative flex flex-wrap  w-[501px] h-[118px] align-center"
+      className="relative flex flex-wrap sm:w-auto  w-[501px] h-[118px] align-center"
       initial="rest"
       whileHover="hover"
       animate="rest"
@@ -123,7 +123,7 @@ function ProductCards({ product }: ProductCardsProps) {
             </p>
           </div>
           {/* price  */}
-          <div className="font-bricolageGrotesque flex flex-col justify-between gap-2 flex-[150px] text-end w-[91px]">
+          <div className="flex flex-col justify-between gap-2 flex-[150px] text-end w-[91px]">
             <p className=" text-red font-medium text-sm leading-snug">
               {discountPercentage}% OFF
             </p>

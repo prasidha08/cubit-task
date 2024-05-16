@@ -10,6 +10,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        sm: { max: "639px" },
+      },
       colors: {
         red: "#F41010",
         lightGray: "#959595",
@@ -21,9 +24,6 @@ const config: Config = {
         blue: "#5215FF",
         darkPink: "#EB09FE",
         lightRed,
-      },
-      fontFamily: {
-        bricolageGrotesque: "Bricolage Grotesque",
       },
       fontWeight: {
         light: "400",
@@ -46,6 +46,33 @@ const config: Config = {
         normal: "19.2px",
         medium: "21.6px",
         large: "33.6px",
+      },
+      animation: {
+        circle1: " moveCircle1 5s infinite",
+        circle2: "moveCircle2 5s infinite",
+        circle3: "",
+      },
+      keyframes: {
+        moveCircle1: {
+          "0%, 75%": {
+            transform: "translate(-89px, 52px)",
+          },
+          "25%, 75%": {
+            transform: "translate(-200px, 58px)",
+          },
+          "50%": {
+            transform: "translate(-10px, 20px)",
+          },
+        },
+        moveCircle2: {
+          "0%,100%": {
+            transform: "translate(-10px, 20px)",
+          },
+          " 25%,75%": {
+            transform: "translate(-10px, 200px)",
+          },
+        },
+        moveCircle3: {},
       },
     },
   },
