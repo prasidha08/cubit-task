@@ -134,7 +134,7 @@ function Tooltip({ children, text }: any) {
     <span className="group relative">
       <span
         className="absolute -top-[3.2rem] -left-5 -translate-x-[70%] whitespace-nowrap bg-white 
-      p-2 opacity-100 transition group-hover:opacity-100  before:content[''] before:absolute before:top-full 
+      p-2 opacity-0 transition group-hover:opacity-100  before:content[''] before:absolute before:top-full 
       before:right-4 before:border-[1rem] before:border-transparent before:border-t-[white]"
       >
         <div>
