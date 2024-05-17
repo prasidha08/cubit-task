@@ -10,7 +10,7 @@
 
 @layer components {
   .pink-circle {
-    @apply bg-darkPink absolute h-[400px] w-[500px] rounded-full mix-blend-hard-light;
+    @apply bg-darkPink absolute rounded-full mix-blend-hard-light w-[30%] h-[30%] ;
   }
   .text {
     @apply text-left font-medium leading-[33.6px] text-title;

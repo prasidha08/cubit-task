@@ -3,8 +3,8 @@ import React from "react";
 function Background() {
   return (
     <>
-      <div className=" bg-blue absolute h-[100vh] w-full">
-        <svg className="hidden">
+      <div className=" bg-blue absolute h-full w-full">
+        <svg>
           <defs>
             <filter id="blend">
               <feGaussianBlur
@@ -23,7 +23,7 @@ function Background() {
           </defs>
         </svg>
 
-        <div style={{ filter: "url(#blend) blur(150px)" }}>
+        <div className="h-full" style={{ filter: "url(#blend) blur(80px)" }}>
           <div className="pink-circle animate-newCircleOne left-1/4 top-14 mix-blend-hard-light"></div>
 
           <div className="pink-circle animate-newCircleTwo left-1/2 top-14"></div>
