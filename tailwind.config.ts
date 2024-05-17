@@ -24,6 +24,8 @@ const config: Config = {
         blue: "#5215FF",
         darkPink: "#EB09FE",
         lightRed,
+        "custom-purple": "#A083F2",
+        "custom-pink": "#F55A66",
       },
       fontWeight: {
         light: "400",
