@@ -2,6 +2,9 @@ import type { Config } from "tailwindcss";
 
 export const lightRed = "#F35C6A";
 
+export const borderGradientColor =
+  "linear-gradient(92.61deg, #A083F2 0.69%, #F55A66 101.14%)";
+
 const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -50,31 +53,61 @@ const config: Config = {
         large: "33.6px",
       },
       animation: {
-        circle1: " moveCircle1 5s infinite",
-        circle2: "moveCircle2 5s infinite",
-        circle3: "",
+        circle1: " moveCircle1 15s infinite linear",
+        circle2: "moveCircle2 15s infinite linear",
+        circle3: "moveCircle3  15s infinite linear",
+        newCircleOne: "newOne 15s infinite linear",
+        newCircleTwo: "newTwo 15s infinite linear",
+        newCircleThree: "newThree 15s infinite linear",
+        diagonalAnimation: "diagonal 15s infinite linear",
       },
       keyframes: {
-        moveCircle1: {
-          "0%, 75%": {
-            transform: "translate(-89px, 52px)",
-          },
-          "25%, 75%": {
-            transform: "translate(-200px, 58px)",
+        newOne: {
+          "0%": {
+            transform: "rotate(-360deg)",
           },
           "50%": {
-            transform: "translate(-10px, 20px)",
+            opacity: "0",
+          },
+          "75%": {
+            opacity: "1",
           },
         },
-        moveCircle2: {
-          "0%,100%": {
-            transform: "translate(-10px, 20px)",
+        newTwo: {
+          "0%": {
+            transform: "rotate(-360deg)",
           },
-          " 25%,75%": {
-            transform: "translate(-10px, 200px)",
+          "25%": {
+            opacity: "0",
+            transform: "translate(-60%,0%)", // left center
+          },
+          "50%": {
+            transform: "translate(-140%,-140%)", // left top corner
+          },
+          "75%": {
+            opacity: "1",
           },
         },
-        moveCircle3: {},
+        newThree: {
+          "0%": {
+            transform: "rotate(-360deg)",
+          },
+          "25%": {
+            transform: "translate(-60%,0%)", // left center
+          },
+          "50%": {
+            transform: "translate(-140%,-140%)", // left top corner
+          },
+        },
+        diagonal: {
+          "10%": { scale: "0.1" },
+          "25%": {
+            scale: "6",
+          },
+          "50%": {
+            scale: "7",
+          },
+        },
       },
     },
   },
