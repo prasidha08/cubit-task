@@ -11,7 +11,8 @@ function Tooltip({ children, title, description }: TooltipProps) {
       <span
         className="absolute hidden z-[999] -top-[7rem] left-[1rem] -translate-x-[70%] whitespace-nowrap bg-white 
         p-2 transition group-hover:block  before:content[''] before:absolute before:top-full 
-        before:right-3.5  before:border-[.7rem]  before:border-t-[18px] before:border-transparent before:border-t-[white] shadow-xl rounded-[4px]"
+        before:right-3.5  before:border-[.7rem]  before:border-t-[18px] before:border-transparent before:border-t-[white] shadow-xl rounded-[4px]
+        sm:left-[9.2rem] sm:before:right-[11.5rem]"
       >
         <div className="flex flex-col w-[231px] h-[84px] leading-tight text-xs p-2 whitespace-normal gap-2">
           <p className="font-normal ">{title}</p>
