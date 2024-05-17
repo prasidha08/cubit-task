@@ -4,6 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Tooltip from "./Tooltip";
+import { borderGradientColor } from "../../../tailwind.config";
 
 export type Product = {
   id: string;
@@ -39,8 +40,7 @@ const mainContainer = {
     border: "2px solid",
     borderRight: "0px",
     borderImageSlice: "1",
-    borderImageSource:
-      "linear-gradient(92.61deg, #A083F2 0.69%, #F55A66 101.14%)",
+    borderImageSource: borderGradientColor,
     transition: {
       backgroundColor: "red",
       duration: 2,
