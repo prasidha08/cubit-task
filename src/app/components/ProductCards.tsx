@@ -196,7 +196,7 @@ function CardContents({
           <p className="line-through text-md font-normal leading-normal text-lightGray">
             ${price}
           </p>
-          <p className="font-bold text-lg leading-medium">
+          <p className="font-bold text-lg leading-medium sm:font-medium">
             ${getTotalPriceAfterDiscount(discountPercentage, price)}
           </p>
         </div>
