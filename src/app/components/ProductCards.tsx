@@ -1,10 +1,9 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Tooltip from "./Tooltip";
-import { lightRed } from "../../../tailwind.config";
 
 export type Product = {
   id: string;
@@ -35,8 +34,13 @@ const mainContainer = {
     },
   },
   hover: {
-    x: [0, 30],
+    x: 30,
     scale: 1.1,
+    border: "2px solid",
+    borderRight: "0px",
+    borderImageSlice: "1",
+    borderImageSource:
+      "linear-gradient(92.61deg, #A083F2 0.69%, #F55A66 101.14%)",
     transition: {
       backgroundColor: "red",
       duration: 2,
@@ -53,20 +57,17 @@ const deleteContainer = {
     width: 0,
     opacity: 0,
     transition: {
-      duration: 0.5,
       type: "spring",
       damping: 100,
       stiffness: 400,
     },
   },
   hover: {
-    x: [0, 60],
+    x: 60,
     opacity: 1,
-    backgroundColor: lightRed,
     width: "280px",
-    scale: 1.1,
+    scale: 1.08,
     transition: {
-      duration: 0.5,
       type: "spring",
       damping: 10,
       stiffness: 200,
@@ -80,12 +81,11 @@ function ProductCards({ product }: ProductCardsProps) {
 
   return (
     <motion.div
-      className="relative flex flex-wrap sm:w-auto  w-[501px] h-[118px] align-center "
+      className="relative flex flex-wrap sm:w-auto w-[501px] h-[118px] align-center "
       initial="rest"
       whileHover="hover"
       animate="rest"
     >
-      {/* this is a card */}
       <motion.div
         className="relative z-[999] flex items-center p-2 bg-white w-full h-full gap-4 px-[24px] py-[14px] rounded-md shadow-lg"
         variants={mainContainer}
